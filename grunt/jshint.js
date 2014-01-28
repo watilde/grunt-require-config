@@ -1,6 +1,6 @@
 module.exports = {
   all: [
-    'tasks/tvm_tsc.js',
+    'tasks/require_config.js',
     'Gruntfile.js'
   ]
 };

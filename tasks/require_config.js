@@ -14,7 +14,7 @@ module.exports = function(grunt) {
     var list = _.reduce(filesSrc, function (memo, fileSrc) {
       var filePath = path.resolve(fileSrc) + '/';
       var files = fs.readdirSync(fileSrc);
-      memo.push(files.map(function(file) { return filePath + file}));
+      memo.push(files.map(function(file) { return filePath + file; }));
       return _.flatten(memo);
     }, []);
 
