@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Grunt-require-config by watilde</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Grunt-require-config</h1>
+        <p>Keep Gruntfile simple, stupid.</p>
+        <p class="view"><a href="https://github.com/watilde/grunt-require-config">View the Project on GitHub <small>watilde/grunt-require-config</small></a></p>
+        <ul>
+          <li><a href="https://github.com/watilde/grunt-require-config/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/watilde/grunt-require-config/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/watilde/grunt-require-config">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="grunt-require-config" class="anchor" href="#grunt-require-config"><span class="octicon octicon-link"></span></a>grunt-require-config</h1>
+
+<blockquote>
+<p>Keep Gruntfile simple, stupid.</p>
+</blockquote>
+
+<h2>
+<a name="getting-started" class="anchor" href="#getting-started"><span class="octicon octicon-link"></span></a>Getting Started</h2>
+
+<p>If you haven't used <a href="http://gruntjs.com/">Grunt</a> before, be sure to check out the <a href="http://gruntjs.com/getting-started">Getting Started</a> guide, as it explains how to create a <a href="http://gruntjs.com/sample-gruntfile">Gruntfile</a> as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:</p>
+
+<pre lang="shell"><code>npm install grunt-require-config --save-dev
+</code></pre>
+
+<p>Once the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:</p>
+
+<div class="highlight highlight-js"><pre><span class="nx">grunt</span><span class="p">.</span><span class="nx">loadNpmTasks</span><span class="p">(</span><span class="s1">'grunt-require-config'</span><span class="p">);</span>
+</pre></div>
+
+<p><em>Run this task with the <code>grunt require_config</code> command.</em></p>
+
+<h2>
+<a name="usage-examples" class="anchor" href="#usage-examples"><span class="octicon octicon-link"></span></a>Usage Examples</h2>
+
+<div class="highlight highlight-js"><pre> <span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">grunt</span><span class="p">)</span> <span class="p">{</span>
+   <span class="s1">'use strict'</span><span class="p">;</span>
+   <span class="nx">grunt</span><span class="p">.</span><span class="nx">initConfig</span><span class="p">({</span>
+     <span class="nx">require_config</span><span class="o">:</span> <span class="p">{</span>
+       <span class="nx">all</span><span class="o">:</span> <span class="p">{</span>
+         <span class="nx">options</span><span class="o">:</span> <span class="p">{</span>
+           <span class="nx">ignore</span><span class="o">:</span> <span class="p">[</span><span class="s1">'grunt/trush'</span><span class="p">]</span>
+         <span class="p">},</span>
+         <span class="nx">src</span><span class="o">:</span> <span class="p">[</span><span class="s1">'grunt'</span><span class="p">]</span>
+       <span class="p">}</span>
+     <span class="p">}</span>
+   <span class="p">});</span>
+   <span class="nx">grunt</span><span class="p">.</span><span class="nx">loadNpmTasks</span><span class="p">(</span><span class="s1">'grunt-require-config'</span><span class="p">);</span>
+   <span class="nx">grunt</span><span class="p">.</span><span class="nx">registerTask</span><span class="p">(</span><span class="s1">'default'</span><span class="p">,</span> <span class="p">[</span><span class="s1">'require_config'</span><span class="p">,</span> <span class="s1">'jshint'</span><span class="p">]);</span>
+ <span class="p">};</span>
+</pre></div>
+
+<h2>
+<a name="properties" class="anchor" href="#properties"><span class="octicon octicon-link"></span></a>Properties</h2>
+
+<h3>
+<a name="src" class="anchor" href="#src"><span class="octicon octicon-link"></span></a>src</h3>
+
+<ul>
+<li>Type: <code>Array || String</code>
+</li>
+<li>Require directories</li>
+</ul><h2>
+<a name="options" class="anchor" href="#options"><span class="octicon octicon-link"></span></a>Options</h2>
+
+<h3>
+<a name="ignore" class="anchor" href="#ignore"><span class="octicon octicon-link"></span></a>ignore</h3>
+
+<ul>
+<li>Type: <code>Array</code>
+</li>
+<li>Default: []</li>
+<li>Require ignore files</li>
+</ul>
+      </section>
+    </div>
+    <footer>
+      <p>Project maintained by <a href="https://github.com/watilde">watilde</a></p>
+      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+    </footer>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
