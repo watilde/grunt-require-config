@@ -11,7 +11,6 @@ module.exports = function(grunt) {
     }
   });
 
-  // Load this plugin's task(s).
   grunt.loadTasks('tasks');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.registerTask('default', ['require_config', 'jshint']);

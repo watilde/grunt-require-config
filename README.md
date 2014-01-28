@@ -34,21 +34,15 @@ _Run this task with the `grunt tvm_tsc` command._
    grunt.loadNpmTasks('grunt-require-config');
    grunt.registerTask('default', ['require_config', 'jshint']);
  };
-
-
-
-
 ```
+
+## Properties
+### src
++ Type: `Array || `String`
++ Require directories
 
 ## Options
 ### ignore
 + Type: `Array`
 + Default: []
 + Require ignore files
-+ Default: 'commonjs'
-+ Specify module code generation: "commonjs" (default) or "amd"
-
-### declaration
-+ Type: `Boolean`
-+ Default: false
-+ Generates corresponding .d.ts file
