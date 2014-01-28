@@ -17,6 +17,11 @@ grunt.loadNpmTasks('grunt-require-config');
 _Run this task with the `grunt require_config` command._
 
 ## Usage Examples
+```
+$ ls ./grunt
+  jshint.js
+  trash.js
+```
 
 ```js
  module.exports = function(grunt) {
