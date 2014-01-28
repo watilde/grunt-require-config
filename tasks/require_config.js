@@ -34,7 +34,7 @@ module.exports = function(grunt) {
     }, []);
 
     list.forEach(function(item) {
-      var key = item.match(/(?!.*\/).+/)[0];
+      var key = _.first(item.match(/(?!.*\/).+/));
       grunt.config.set(key, require(item));
     });
   };
