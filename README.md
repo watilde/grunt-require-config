@@ -38,7 +38,7 @@ _Run this task with the `grunt require_config` command._
 
 ## Properties
 ### src
-+ Type: `Array || `String`
++ Type: `Array || String`
 + Require directories
 
 ## Options
