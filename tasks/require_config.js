@@ -34,7 +34,6 @@ module.exports = function(grunt) {
       return memo;
     }, []);
 
-    var config = {};
     list.forEach(function(item) {
       var key = item.match(/(?!.*\/).+/)[0];
       grunt.config.set(key, require(item));
