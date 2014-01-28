@@ -5,7 +5,6 @@ module.exports = function(grunt) {
   var _ = grunt.util._;
   var taskName = 'require_config';
   var description = 'Keep Gruntfile.js simple, stupid';
-  var dirname = path.resolve('.');
 
   var taskFunction = function () {
     var options = this.options({
