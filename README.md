@@ -14,7 +14,7 @@ Once the plugin has been installed, it may be enabled inside your Gruntfile with
 grunt.loadNpmTasks('grunt-require-config');
 ```
 
-_Run this task with the `grunt tvm_tsc` command._
+_Run this task with the `grunt require_config` command._
 
 ## Usage Examples
 
