@@ -1,0 +1,29 @@
+{
+  "name": "grunt-require-config",
+  "version": "0.0.0",
+  "description": "Keep Gruntfile simple, stupid.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:watilde/grunt-require-config.git"
+  },
+  "keywords": [
+    "gruntplugin"
+  ],
+  "author": {
+    "name": "Daijiro Wachi",
+    "url": "https://github.com/watilde"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/watilde/grunt-require-config/issues"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-jshint": "~0.8.0"
+  }
+}
