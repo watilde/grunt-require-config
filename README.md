@@ -1,4 +1,6 @@
 # grunt-require-config
+[![Build Status](https://travis-ci.org/watilde/grunt-require-config.png?branch=master)](https://travis-ci.org/watilde/grunt-require-config)
+
 >Keep Gruntfile simple, stupid.
 
 ## Getting Started
