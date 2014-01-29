@@ -15,8 +15,7 @@ Once the plugin has been installed, it may be enabled inside your Gruntfile with
 ```js
 grunt.loadNpmTasks('grunt-require-config');
 ```
-
-_Run this task with the `grunt require_config` command._
+Run this task with the ``grunt require_config`` command.
 
 ## Usage Examples
 ```
