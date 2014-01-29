@@ -19,14 +19,13 @@ module.exports = function(grunt) {
     }, []);
 
     options.ignore = _.map(options.ignore, function (item) {
-      return path.resolve(item);
+      return path.resolve(item).replace('.js', '');
     });
 
     list = _.reduce(list, function (memo, item) {
       var status = true;
       item = item.replace('.js', '');
       options.ignore.forEach(function (ignore) {
-        ignore = ignore.replace('.js', '');
         if (item === ignore) { status = false; }
       });
       if (status) { memo.push(item); }
