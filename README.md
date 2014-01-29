@@ -24,6 +24,7 @@ $ ls ./grunt
   trash.js
 ```
 
+### Gruntfile.js
 ```js
  module.exports = function(grunt) {
    'use strict';
@@ -40,6 +41,15 @@ $ ls ./grunt
    grunt.loadNpmTasks('grunt-require-config');
    grunt.registerTask('default', ['require_config', 'jshint']);
  };
+```
+
+### grunt/jshint.js
+```js
+module.exports = {
+  all: [
+    'src/*.js'
+  ]
+};
 ```
 
 ## Properties
