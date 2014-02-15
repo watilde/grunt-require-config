@@ -1,11 +1,11 @@
 {
   "name": "grunt-require-config",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Keep Gruntfile simple, stupid.",
   "homepage": "http://watilde.github.io/grunt-require-config",
   "main": "Gruntfile.js",
   "scripts": {
-    "test": "./node_modules/.bin/grunt"
+    "test": "./node_modules/.bin/grunt test"
   },
   "repository": {
     "type": "git",
